@@ -1,0 +1,13 @@
+.skills {
+    color: white;
+}
+.skills>div{
+    min-width: 80%;
+}
+.tools i{
+    color: #E43753;
+    font-size: 120px;
+}
+.skills h2{
+    margin: 50px 0;
+}

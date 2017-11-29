@@ -1,0 +1,52 @@
+.grid {
+	/*padding: 20px 20px 100px 20px;*/
+	max-width: 600px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background: #555050;
+	color: #ed4e6e;
+	display: none;
+	transition: all 2s ease-in-out;
+}
+.grid:hover figcaption{
+	display: block; 
+}
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+	margin: 0 20px;
+}
+.grid figcaption a:hover{
+	text-decoration:none;
+}
+.grid i {
+	font-size: 2em;
+	margin: 0 10px;
+}

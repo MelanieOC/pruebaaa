@@ -1,0 +1,47 @@
+section.contact {
+    padding: 13% 0 6% 0;
+    text-align: center;
+    position: relative;
+}
+.titleContact{
+    color:#E43753 ;
+    text-align: center;
+    font-size: 350%;
+    font-weight: bold;
+    font-family: "Quicksand", serif;
+    margin-top: -8%;
+    padding-bottom: 2%;
+  
+  }
+  .contactame{
+    font-size: 186%;
+    color: white;
+    padding-bottom: 9%;
+    font-family: "Quicksand", serif;
+  }
+  .listaIcono{
+    position: relative;
+    padding-left: 43%;
+    padding-top: 2%;
+  }
+  .icon{
+    font-size: 68px;
+    color: white;
+  }
+  .enlace{
+    text-decoration: none !important;
+    color: white;
+    vertical-align: middle;
+  }
+  .icon:hover{
+    color: #E64862 !important;
+  }
+  .redes-sociales{
+    padding-bottom: 6%;
+  }
+  .datos{
+    color: white;
+    font-size: 154%;
+    font-family: "Quicksand", serif;
+    padding-top: 12%;
+  }
