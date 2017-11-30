@@ -36,7 +36,7 @@ const Example = () => (
 );
 
 const Angle = ({ direccion }) => {
-  const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200' }
+  const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200', top_right: '0, 0 200, 0 200, 200'}
   return (
     <div className={'angle_' + direccion}>
       <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
@@ -64,21 +64,21 @@ const App = () => {
           <div className='inner-container' style={{ height: altura }} ref={(div) => { this.div = div }}>
             <div className='name reverso'>
               <h1>MELANIE </h1>
-              <h1>OCHARAN</h1>
+              <h1 style={{fontSize:'2em'}}>OCHARAN</h1>
               <p>Front-end Developer Jr.</p>
             </div>
           </div>
-          <Angle direccion='bottom_left' />
         </div>
       </section>
       <section className='outer-container' id='portfolio'>
+        <Angle direccion='top_right' />
         <div className='inner-container'>
           <Presentacion />
         </div>
+        <Angle direccion='bottom_right' />
       </section>
       <section className='outer-container' id='about'>
         <div className='color-wrapper'>
-          <Angle direccion='top_left' />
           <div className='inner-container'>
             <Trabajo />
           </div>

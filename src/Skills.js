@@ -1,12 +1,12 @@
 import React from 'react';
 import './Skills.css';
 import './probando.css';
-import {Tooltip, OverlayTrigger} from 'react-bootstrap';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 //https://codepen.io/joshuarule/pen/bIkHL?page=5
 
 const Porcent = ({ percent, icon, brand }) => {
     const tooltip = (
-        <Tooltip id="tooltip">{'Dominado al ' + percent + '%'}</Tooltip>
+        <Tooltip >{'Dominado al ' + percent + '%'}</Tooltip>
     );
     return (
         <OverlayTrigger placement="bottom" overlay={tooltip}>

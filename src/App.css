@@ -1,7 +1,7 @@
-.angle_bottom_left, .angle_top_left, .angle_bottom_right {
+.angle_bottom_left, .angle_top_left, .angle_bottom_right, .angle_top_right{
   width: 100%;
   height: 160px; }
-  .angle_bottom_left svg, .angle_top_left svg, .angle_bottom_right svg {
+  .angle_bottom_left svg, .angle_top_left svg, .angle_bottom_right svg, .angle_top_right svg {
     width: 100%;
     height: 100%; }
 
@@ -12,8 +12,7 @@
   background-image: url(./triangle_pattern.png);*/
   background-color: #E43753;
   }
-  #intro .angle_bottom_left svg {
-    fill: #dcdad8; }
+  
 #intro .inner-container{
   height: 100%;
   display: flex;
@@ -22,9 +21,19 @@
 }
 #intro .name{
   color: white;
+  text-align: left;
+  position: relative;
+  bottom: -50px;
 }
 .name h1{
   font-family: 'Monoton', cursive;
+}
+.name p {
+  font-size: 0.5em;
+  position: relative;
+  top: 22px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
 }
 .reverso{
 	writing-mode: vertical-rl;
@@ -73,9 +82,15 @@ a {
   padding: 30px;
   overflow: hidden; }
 
-#portfolio {
-  background-color: #dcdad8; }
-
+#portfolio { 
+  background-attachment: fixed;
+  background-image: url(./fondo1.png);
+}
+#portfolio .angle_top_right svg {
+  fill: #E43753; }
+#portfolio .angle_bottom_right svg {
+    fill: white; 
+  }
 #instagram {
   background-color: white; }
   #contact{

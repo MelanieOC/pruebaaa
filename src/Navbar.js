@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Navbar.css';
+import './Navbar2.css';
 
 
 class Navbar extends Component {
@@ -32,31 +32,14 @@ class Navbar extends Component {
         }
         return (
             <div className='nav2' >
-                <nav className={this.state.open ? 'menu-opener active' : this.state.change ? "menu-opener pink" : 'menu-opener'} onClick={change}>
-                    <div className={this.state.open ? 'menu-opener-inner active' : "menu-opener-inner"}>
-                        <i className="fa fa-bars" aria-hidden="true"></i>
-                        <i className="fa fa-times" aria-hidden="true"></i>
-                    </div>
-                </nav>
-                <nav className={this.state.open ? 'menu active' : "menu"} >
-                    <ul className="menu-inner">
-                        <a href="#" className="menu-link">
-                            <li>Conoceme</li>
-                        </a>
-                        <a href="#" className="menu-link">
-                            <li>Mi trabajo</li>
-                        </a>
-                        <a href="#" className="menu-link">
-                            <li>Skills</li>
-                        </a>
-                        <a href="#" className="menu-link">
-                            <li>Proyectos</li>
-                        </a>
-                        <a href="#" className="menu-link">
-                            <li>Contáctame</li>
-                        </a>
+                <div id="toggle" className={this.state.open ? this.state.change ? "pink on" : 'on' : this.state.change ? "pink" : ''} onClick={change}><span></span></div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         )
     }
