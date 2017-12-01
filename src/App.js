@@ -36,7 +36,7 @@ const Example = () => (
 );
 
 const Angle = ({ direccion }) => {
-  const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200', top_right: '0, 0 200, 0 200, 200'}
+  const mesures = { top_left: '0, 200 0, 0 200, 0', bottom_left: '200, 200 0, 200 0, 0', bottom_right: '200, 0 200, 200 0, 200', top_right: '0, 0 200, 0 200, 200' }
   return (
     <div className={'angle_' + direccion}>
       <svg viewBox='0 0 200 200' preserveAspectRatio='none'>
@@ -50,21 +50,13 @@ const App = () => {
   const altura = window.screen.height - 290;
   return (
     <div>
-      <MediaQuery query="(min-device-width: 1224px)">
-        <Navbar page={altura} />
-        <MediaQuery query="(min-device-width: 1824px)">
-          <Navbar page={altura} />
-        </MediaQuery>
-      </MediaQuery>
-      <MediaQuery query="(orientation: portrait)">
-        <Navbar page={altura} />
-      </MediaQuery>
+      <Navbar page={altura} />
       <section className='outer-container' id='intro' >
         <div className='color-wrapper'>
           <div className='inner-container' style={{ height: altura }} ref={(div) => { this.div = div }}>
             <div className='name reverso'>
               <h1>MELANIE </h1>
-              <h1 style={{fontSize:'2em'}}>OCHARAN</h1>
+              <h1 style={{ fontSize: '2em' }}>OCHARAN</h1>
               <p>Front-end Developer Jr.</p>
             </div>
           </div>
@@ -79,7 +71,7 @@ const App = () => {
       </section>
       <section className='outer-container' id='about'>
         <div className='color-wrapper'>
-          <div className='inner-container'>
+          <div className='inner-container' align='center'>
             <Trabajo />
           </div>
           <Angle direccion='bottom_left' />
@@ -96,8 +88,14 @@ const App = () => {
           <Portfolio />
         </div>
       </section>
-      <section id='contact'>
+      <section className='outer-container' id='instagram'>
         <Angle direccion='top_left' />
+        <div className='inner-container'>
+          <h1>Hackathon</h1>
+        </div>
+      </section>
+      <section id='contact'>
+        <Angle direccion='top_right' />
         <div className='inner-container'>
           <Contact />
         </div>

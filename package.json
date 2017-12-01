@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://melanie.github.io",
   "dependencies": {
     "react": "^16.1.1",
     "react-bootstrap": "^0.31.5",

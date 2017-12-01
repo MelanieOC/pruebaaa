@@ -1,12 +1,13 @@
 import React from 'react';
 import proyectos from './Proyectos.js';
+import { Row, Col, Grid, Image } from 'react-bootstrap';
 import './Portfolio.css';
 
 const Cuadro = ({ proyecto }) => {
     return (
-        <div className="grid col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <Col lg={6} md={6} xs={12} sm={6} className="grid">
             <figure>
-                <img className='img-responsive' src={proyecto.img} alt={proyecto.name} />
+                <Image src={proyecto.img} alt={proyecto.name} responsive />
                 <figcaption>
                     <span>
                         {proyecto.tool.map(a => <i className={a}></i>)}
@@ -17,17 +18,17 @@ const Cuadro = ({ proyecto }) => {
                     </span>
                 </figcaption>
             </figure>
-        </div>
+        </Col>
     );
 }
 const Portfolio = () => {
     return (
-        <div className="container-fluid">
+        <Grid>
             <h1>Proyectos</h1>
-            <div className="row text-center">
+            <Row className="text-center">
                 {proyectos.map((a, i) => <Cuadro proyecto={a} key={i} />)}
-            </div>
-        </div>
+            </Row>
+        </Grid>
     );
 }
 

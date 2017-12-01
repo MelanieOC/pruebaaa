@@ -1,89 +1,10 @@
-/*
-#aboutme{
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
+
+.description{
+	margin: 40px 0;
+	background-color: #33333323;
+	width: 75%;
+	height: 350px;
+	border-radius: 10px;
+	padding: 30px 40px;
 }
 
-#aboutme .description{
-    z-index: 150;
-    position: relative;
-    right: -30px;
-    text-align: right;
-    display: flex;
-    align-items: center;
-}
-
-#aboutme .foto{
-    z-index: 100;
-
-}*/
-
-#probando_ando{
-	height: 800px;
-}
-.persona{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.hexagon_g {
-	width: 264px;
-	height: 145.2px;
-	background: #333333;
-	position: relative;
-	margin: 0 20px;
-}
-.hexagon_g:before {
-	content: "";
-	position: absolute;
-	top: -66px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 132px solid transparent;
-	border-right: 132px solid transparent;
-	border-bottom: 66px solid #333333;
-}
-.hexagon_g:after {
-	content: "";
-	position: absolute;
-	bottom: -66px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 132px solid transparent;
-	border-right: 132px solid transparent;
-	border-top: 66px solid #333333;
-}
-.hexagon {
-	width: 240px;
-	height: 132px;
-	background: white;
-	position: relative;
-	z-index: 200;
-	bottom: -6px;
-}
-.hexagon:before {
-	content: "";
-	position: absolute;
-	top: -60px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 120px solid transparent;
-	border-right: 120px solid transparent;
-	border-bottom: 60px solid white;
-}
-.hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -60px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 120px solid transparent;
-	border-right: 120px solid transparent;
-	border-top: 60px solid white;
-}
